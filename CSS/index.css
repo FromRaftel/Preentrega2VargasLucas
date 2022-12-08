@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Inicio Index*/
+body {
+    background-image: url(/IMG/daftback.gif);
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(179, 179, 179);
+    text-align: center;
+}
+
+.textoBody {
+
+    font-size: 25px;
+    color: rgb(179, 179, 179);
+    text-align: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    /*PADDING: Separacion interna, se separa del borde y los parrafos*/
+    border: 1px solid;
+    /*Grosor, el estilo del borde y color (no importa el orden)*/
+    border-color: rgb(42, 136, 165);
+    width: 20%;
+    height: 60%;
+
+
+}
+
+/*Final Index*/
+
+/*Inicio Conciertos*/
+
+table {
+    width: 500px;
+    height: 600px;
+    background-color: rgba(8, 78, 90, 0.315);
+    border: 2px solid;
+    border-color: rgb(174, 22, 194);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    border-collapse: separate;
+    color: rgb(179, 179, 179);
+    
+}
+
+/*Final Conciertos*/
+
+/*Inicio Discografia*/
+
+/*Final Discografia*/
+
+/*Inicio Galeria*/
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.fotoColumna {
+    margin: 5px;
+}
+
+.fotosGaleria .contenedor {
+    display: grid;
+}
+
+@media(min-width:520px) {
+    .fotosGaleria .contenedor {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media(min-width:728px) {
+    .fotosGaleria .contenedor {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+}
+
+@media(min-width:1024px) {
+    .fotosGaleria .contenedor {
+
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .contenedor {
+        width: 1024px;
+    }
+}
+
+@media(min-width:1200px) {
+    .contenedor {
+        width: 1200px;
+    }
+}
+
+/*Final Galeria*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
